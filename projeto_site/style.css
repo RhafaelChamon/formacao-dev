@@ -1,0 +1,50 @@
+* {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(54, 139, 196);
+}
+
+main {
+    background-color: white;
+    width: 560px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+h1 {
+    font-size: 2em;
+    color: rgb(7, 2, 255);
+    text-shadow: 3px 3px 5px rgb(97, 97, 97);
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color:  rgb(21, 123, 182);
+}
+
+img.lado {
+    width: 110px;
+    float: right;
+}
+
+img.topo {
+    width: 150px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
