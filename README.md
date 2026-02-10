@@ -7,6 +7,8 @@ A ideia de centralizar diferentes cursos e estudos em um único repositório é 
 ## Conteúdo
 - **Curso de Pyhton**  
   Exercícios e práticas realizadas durante o curso de Python do *Curso em Vídeo*.
+- **Curso de Git e GitHub**  
+  Projeto de um mini site desenvolvido como forma de fixação e aprofundamento dos conceitos aprendidos no curso de Git e GitHub do *Curso em Vídeo*.
 
 ---
 
