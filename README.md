@@ -9,6 +9,8 @@ A ideia de centralizar diferentes cursos e estudos em um único repositório é 
   Exercícios e práticas realizadas durante o curso de Python do *Curso em Vídeo*.
 - **Curso de Git e GitHub**  
   Projeto de um mini site desenvolvido como forma de fixação e aprofundamento dos conceitos aprendidos no curso de Git e GitHub do *Curso em Vídeo*.
+- **Curso de HTML5 e CSS3**
+  Realizando no momento... abrangendo vários conceitos de marcação e estilos usando HTML e CSS.
 
 ---
 
