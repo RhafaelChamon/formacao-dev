@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Mayonice';
+            src: url(fonts/Mayonice.ttf) format('truetype'),
+            url(fonts/Mayonice.otf) format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Love';
+            src: url(fonts/Love.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Quentin';
+            src: url(fonts/Quentin.otf) format('opentype');
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Mayonice', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: lighter;
+        }
+
+        h2 {
+            font-family: 'Quentin', 'Times New Roman', Times, serif;
+            font-size: 2em;
+            font-weight: lighter;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quam explicabo, est reiciendis maiores doloremque fugit esse dolor cumque, tempore sint ratione nam delectus dolores blanditiis omnis error numquam necessitatibus?
+    </p>
+    <h2>Subtitulo</h2>
+    <p style="font-family: 'Love', 'Times New Roman', Times, serif;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error obcaecati aspernatur, ipsa mollitia quas repellendus ullam sapiente inventore amet molestias explicabo deserunt eius ipsum, numquam modi quae excepturi vero soluta.
+    </p>
+</body>
+</html>
