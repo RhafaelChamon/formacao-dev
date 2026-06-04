@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: rgb(139, 139, 139);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(223, 223, 223);
+            text-align: center;
+        }
+
+        header > h1 {
+            margin: 0px;
+            padding: 10px;
+        }
+
+        div#menu {
+            background-color: gray;
+            padding: 1px;
+        }
+
+        div#menu > p {
+            text-align: left;
+            padding-left: 30px;
+            color: white;
+            font-weight: bolder;
+            margin: 8px;
+        }
+
+        nav {
+            display: none;
+            padding: 5px;
+        }
+
+        div#menu:hover > nav {
+            display: inline-block;
+            background-color: gray;
+
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0px 10px;
+            margin: 0px 10px
+        }
+
+        nav > a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.201);
+        }
+
+        section {
+            background-color: rgb(241, 241, 241);
+            margin: 5px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        section > article {
+            background-color: white;
+            padding: 8px;
+            margin: 5px;
+        }
+        
+        section > article > h2 {
+            text-decoration: underline;
+        }
+
+        section > article > aside {
+            text-align: right;
+        }
+
+        section > article > p {
+            text-align: justify;
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&gt; Meu site &lt;</h1>
+        <div id="menu">
+            <p>MENU</p>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Noticias recentes</a>
+                <a href="#">Assuntos</a>
+                <a href="#">Contate-nos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="noticias">
+            <h1>Noticias</h1>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam atque dolorum recusandae nemo sit placeat alias provident vel velit corrupti praesentium delectus, quis autem deserunt dignissimos perspiciatis enim consequatur.</p>
+                <aside>Artigo escrito por: José Madeiros</aside>
+            </article>
+            <article>
+                <h2>Copa do Mundo 2026</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis nostrum a dolores repellat accusantium vel quod quasi eos! Quidem, similique? Ducimus, consequuntur veniam dicta earum nulla nam facilis facere!</p>
+                <aside>Artigo escrito por: Alvin Souza</aside>
+            </article>
+        </section>
+        <section id="tecnologia">
+            <h1>Tecnologia</h1>
+            <article>
+                <h2>Alta nos preços de eletrônicos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam recusandae expedita iusto repellat earum accusamus, tempora iste quisquam veritatis. Laudantium, corporis. Laborum vel dolorem pariatur fuga tempora! Accusantium, corporis dignissimos.</p>
+                <aside>Artigo escrito por: Rosa Meireve</aside>
+            </article>
+            <article>
+                <h2>Lançamentos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, officiis minima debitis provident error quis minus totam sed. Nisi eius distinctio enim. Labore, quo culpa sit qui soluta mollitia necessitatibus.</p>
+                <aside>Artigo escrito por: George Perys</aside>
+            </article>
+        </section>
+    </main>    
+    <footer>
+        <p>Desenvolvido por: Gafanhoto do Curso em Vídeo</p>
+    </footer>
+</body>
+</html>
