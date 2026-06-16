@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex006 - JavaScript</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            div {
+                background-color: rgb(59, 201, 250);
+                border-radius: 15px;
+                margin: 10px auto;
+                max-width: 600px;
+                padding: 5px;
+                h1, p {
+                    margin: 5px 0px;
+                }
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, world!</h1>
+        <p>Arquivo criado para teste no curso de JavaScript!</p>
+    </div>
+
+    <div id="div01" onmouseenter="entrou(id)" onmouseleave="saiu(id)" onclick="clicou(id)">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem necessitatibus illo, perferendis saepe consequatur praesentium tempora consequuntur expedita iure tempore cumque doloremque, hic labore est magni distinctio illum enim possimus.</p>
+    </div>
+
+    <div id="div02" onmouseenter="entrou(id)" onmouseleave="saiu(id)" onclick="clicou(id)">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, maiores! Odit, sequi? Impedit a provident, iusto libero minus soluta dolor culpa. Hic impedit tenetur eius cupiditate ad eaque aliquid esse!</p>
+    </div>
+
+    <div id="div03" onmouseenter="entrou(id)" onmouseleave="saiu(id)" onclick="clicou(id)">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos natus rerum fugiat expedita at neque ullam, eum ipsam laboriosam est earum, nemo, quod in doloremque corporis repudiandae animi! Aliquam, eius.</p>
+    </div>
+
+    <div id="div04" onmouseenter="entrou(id)" onmouseleave="saiu(id)" onclick="clicou(id)">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo blanditiis reprehenderit corporis hic perspiciatis quas dicta praesentium voluptate cumque molestiae ab voluptatum, corrupti repudiandae vero quod expedita id atque pariatur?</p>
+    </div>
+    
+    <script>
+        function entrou(numdiv) {
+            window.document.getElementById(numdiv).style.background = 'green'
+        }
+
+        function saiu(numdiv) {
+            window.document.getElementById(numdiv).style.background = 'rgb(59, 201, 250)'
+        }
+
+        function clicou(numdiv) {
+            var div = window.document.getElementById(numdiv)
+            div.style.background = 'red'
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004 - JavaScript</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            div {
+                background-color: rgb(59, 201, 226);
+                border-radius: 15px;
+                margin: 10px auto;
+                max-width: 600px;
+                padding: 5px;
+                h1, p {
+                    margin: 5px 0px;
+                }
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, world!</h1>
+        <p>Arquivo criado para teste no curso de JavaScript!</p>
+        <script>
+            var nome = window.prompt('Qual é seu nome?')
+            var n1 = 1533.5
+            document.write(`<p>Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</p>`)
+            document.write(`<p>Seu nome em maiúsculas é ${nome.toUpperCase()}</p>`)
+            document.write(`<p>Seu nome em minúsculas é ${nome.toLowerCase()}</p>`)
+            document.write(`<h1>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</h1>`)
+        </script>
+    </div>
+</body>
+</html>

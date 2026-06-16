@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005 - JavaScript</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            div {
+                background-color: rgb(59, 201, 250);
+                border-radius: 15px;
+                margin: 10px auto;
+                max-width: 600px;
+                padding: 5px;
+                h1, p {
+                    margin: 5px 0px;
+                }
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, world!</h1>
+        <p>Arquivo criado para teste no curso de JavaScript!</p>
+    </div>
+    <div class="classe1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem necessitatibus illo, perferendis saepe consequatur praesentium tempora consequuntur expedita iure tempore cumque doloremque, hic labore est magni distinctio illum enim possimus.</p>
+    </div>
+    <div id="id1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, facere numquam laborum harum deleniti quasi consequatur. Cupiditate numquam consequuntur officia labore nobis. Non necessitatibus quaerat facilis aspernatur ipsum odit exercitationem.</p>
+    </div>
+    <div name="nome1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit. Harum, quis beatae mollitia cupiditate dolor fugit neque qui quos ducimus porro? Temporibus id nobis, exercitationem quam quas sed tenetur.</p>
+    </div>
+    <div class="querySelector1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab assumenda dicta nesciunt aliquid nostrum asperiores eveniet, quasi impedit accusamus, reiciendis corrupti accusantium, ducimus temporibus architecto natus veniam non laudantium est.
+    </div>
+    <script>
+        window.document.getElementsByClassName('classe1')[0].style.background = 'rgb(59, 201, 210)'
+        window.document.getElementById('id1').style.background = 'rgb(59, 201, 170)'
+        window.document.getElementsByName('nome1')[0].style.background = 'rgb(59, 201, 130)'
+        window.document.querySelector('.querySelector1').style.background = 'rgb(59, 201, 90)'
+    </script>
+</body>
+</html>

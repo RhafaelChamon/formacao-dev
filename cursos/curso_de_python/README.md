@@ -1,4 +1,4 @@
-# Exercicios Python
+# Curso de Python
 Exercícios desenvolvidos no curso de Python do Curso em Vídeo.  
 Conteúdos abordados:
 - Fundamentos da linguagem Python

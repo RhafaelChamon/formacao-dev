@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex007 - JavaScript</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            div {
+                background-color: rgb(59, 201, 250);
+                border-radius: 15px;
+                margin: 10px auto;
+                max-width: 800px;
+                padding: 5px;
+                h1, p {
+                    margin: 5px 0px;
+                }
+                input#tn1, input#tn2 {
+                    width: 70px;
+                    text-align: center;
+                    border: 0.5px solid black;
+                    border-radius:9px;
+                }
+
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Somando Valores</h1>
+        <input type="number" name="tn1" id="tn1">
+        <span>+</span>
+        <input type="number" name="tn2" id="tn2">
+        <input type="button" value="Somar" id="button" onclick="clicar()">
+        <p id="res">Resultado...</p>
+    </div>
+    <script>
+        var res = window.document.querySelector('#res')
+        
+        function clicar() {
+            var n1 = Number(window.document.querySelector('#tn1').value)
+            var n2 = Number(window.document.getElementById('tn2').value)
+            
+            res.innerText = `A soma dos números ${n1} + ${n2} é igual a ${n1 + n2}`
+        }
+    </script>
+</body>
+</html>
