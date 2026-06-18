@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex007 - JavaScript</title>
+    <title>Ex009 - JavaScript</title>
     <style>
         body {
             background-color: lightblue;
@@ -19,8 +19,14 @@
                 h1, p {
                     margin: 5px 0px;
                 }
-                input#tn1, input#tn2 {
-                    width: 20%;
+                input#pais_origem {
+                    width: 30%;
+                    text-align: center;
+                    border: 0.5px solid black;
+                    border-radius:9px;
+                }
+
+                input#botao {
                     text-align: center;
                     border: 0.5px solid black;
                     border-radius:9px;
@@ -33,23 +39,25 @@
 </head>
 <body>
     <main>
-        <h1>Somando Valores</h1>
-        <input type="number" name="tn1" id="tn1">
-        <span>+</span>
-        <input type="number" name="tn2" id="tn2">
-        <input type="button" value="Somar" id="botao">
-        <p id="res">Resultado...</p>
+        <h1>Serviço de Naturalização</h1>
+        <p>Qual país você nasceu? <input type="text" name="pais" id="pais_origem"> <input type="button" value="Verificar" id="botao"></p>
+        <div id="res"></div>
     </main>
     <script>
-        var res = window.document.querySelector('#res')
+        var pais = window.document.querySelector('#pais_origem')
         var botao = window.document.querySelector('#botao')
+        var res = window.document.querySelector('#res')
+        
         botao.addEventListener('click', clicar)
-
+        
         function clicar() {
-            var n1 = Number(window.document.querySelector('#tn1').value)
-            var n2 = Number(window.document.querySelector('#tn2').value)
-            
-            res.innerText = `A soma dos números ${n1} + ${n2} é igual a ${n1 + n2}`
+            res.innerHTML = null
+            res.innerHTML += (`<p>Você nasceu no(a) ${pais.value}.</p>`)
+            if (pais.value.toUpperCase() == 'BRASIL') {
+                res.innerHTML += (` <p>Por isso você é considerado BRASILEIRO(A)!</p>`)
+            } else {
+                res.innerHTML += (` <p>Por isso você é considerado ESTRANGEIRO(A)!</p>`)
+            }
         }
     </script>
 </body>
