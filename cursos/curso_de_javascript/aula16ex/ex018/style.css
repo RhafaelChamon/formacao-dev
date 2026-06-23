@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(93, 172, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    
+}
+
+header {
+    h1 {
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+
+main {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+    
+    p {
+        margin: 0;
+    }
+    
+    #num{
+        border-radius: 10px;
+        width: 20%;
+        text-align: center;
+    }
+
+    button {
+        border-radius: 10px;
+    }
+
+    #select_num {
+        min-width: 100px;
+        border-color: rgb(93, 172, 245);
+        border-radius: 2px;
+    }
+
+    #botao_end {
+        display: flex;
+        justify-content: right;
+    }
+
+    #botao_end button {
+        margin: 10px 0;
+    }
+
+    #resu {
+        display: none;
+        text-align: center;
+        margin: 0;
+        border: 1px solid rgba(93, 172, 245, 0.438);
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+footer {
+    text-align: center;
+}
