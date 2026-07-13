@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    header #iconmenu {
+        display: none;
+    }
+
+    header menu {
+        display: block;
+        position: relative;
+        padding: 10px;
+    }
+
+    header menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header menu li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
