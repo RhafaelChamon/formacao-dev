@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        html {
+            scrollbar-width: none;
+        }
+        
+        div.conteiner {
+            background-color: lightsalmon;
+            margin: 10px 0;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        div.flex-item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        div.nw {
+            flex-wrap: nowrap;
+        }
+
+        div.w {
+            flex-wrap: wrap;
+        }
+
+        div.wr {
+            flex-wrap: wrap-reverse;
+        }
+
+
+        div.f {
+            flex-flow: column wrap;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner nw">
+        <div class="flex-item">nowrap A</div>
+        <div class="flex-item">nowrap B</div>
+        <div class="flex-item">nowrap C</div>
+        <div class="flex-item">nowrap D</div>
+        <div class="flex-item">nowrap E</div>
+        <div class="flex-item">nowrap F</div>
+        <div class="flex-item">nowrap G</div>
+        <div class="flex-item">nowrap H</div>
+        <div class="flex-item">nowrap I</div>
+        <div class="flex-item">nowrap J</div>
+    </div>
+
+    <div class="conteiner w">
+        <div class="flex-item">wrap A</div>
+        <div class="flex-item">wrap B</div>
+        <div class="flex-item">wrap C</div>
+        <div class="flex-item">wrap D</div>
+        <div class="flex-item">wrap E</div>
+        <div class="flex-item">wrap F</div>
+        <div class="flex-item">wrap G</div>
+        <div class="flex-item">wrap H</div>
+        <div class="flex-item">wrap I</div>
+        <div class="flex-item">wrap J</div>
+    </div>
+
+    <div class="conteiner wr">
+        <div class="flex-item">wrap-reverse A</div>
+        <div class="flex-item">wrap-reverse B</div>
+        <div class="flex-item">wrap-reverse C</div>
+        <div class="flex-item">wrap-reverse D</div>
+        <div class="flex-item">wrap-reverse E</div>
+        <div class="flex-item">wrap-reverse F</div>
+        <div class="flex-item">wrap-reverse G</div>
+        <div class="flex-item">wrap-reverse H</div>
+        <div class="flex-item">wrap-reverse I</div>
+        <div class="flex-item">wrap-reverse J</div>
+    </div>
+
+    <div class="conteiner f">
+        <div class="flex-item">flow A</div>
+        <div class="flex-item">flow B</div>
+        <div class="flex-item">flow C</div>
+        <div class="flex-item">flow D</div>
+        <div class="flex-item">flow E</div>
+        <div class="flex-item">flow F</div>
+        <div class="flex-item">flow G</div>
+        <div class="flex-item">flow H</div>
+        <div class="flex-item">flow I</div>
+        <div class="flex-item">flow J</div>
+    </div>
+</body>
+</html>
