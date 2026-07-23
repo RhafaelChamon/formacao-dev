@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template: auto / auto 300px minmax(auto, 800px) auto;
+        gap: 15px;
+    }
+    
+    .sec01 {
+        position: sticky;
+        top: 55px;
+        align-self: start;
+    }
+
+    .sec02 {
+        grid-column: 3;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    #skills ul.grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
